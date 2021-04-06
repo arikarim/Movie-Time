@@ -1,8 +1,10 @@
 class Article < ApplicationRecord
-  validates :title, :text, presence: true
+  include ImageUploader::Attachment(:image)
+
+  validates :title, :text, :image, presence: true
   belongs_to :author, class_name: 'User', foreign_key: 'user_id'
   has_many :votes
   belongs_to :category
 
-  accepts_nested_attributes_for :category
+  scope :latest, -> {where(Article = Articles.last)}
 end

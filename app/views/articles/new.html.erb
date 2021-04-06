@@ -1,22 +1,9 @@
 <div class='container'>
   <div class='col-6 mx-auto'>
     <%= form_with model: @article do |f| %>
-      <%
-=begin%>
- <%= f.fields_for :categories do |category| %>
+    
+      <%= collection_select(:article, :category_id,Category.all, :id, :name) %>  
 
-      <%= category.label :Category%>
-      <%= category.text_field :name, class: 'form-control' %>
-
-      <% end %> 
-<%
-=end%>
-      <%
-=begin%>
- <%= collection_select(:article, :category_id, Category.all, :id) %> 
-<%
-=end%>
-  <%= f.select(:category_id,  options_for_select(@category_options)) %>
       <%= f.label :title %>
       <%= f.text_field :title, class: 'form-control' %>
 
@@ -24,7 +11,9 @@
       <%= f.text_area :text, class: 'form-control' %>
 
       <%= f.label :image %>
-      <%= f.file_field :image, class: 'form-control' %>
+      <%= image_tag f.object.image_url if f.object.cached_image_data %>
+      <%= f.hidden_field :image, value: f.object.cached_image_data %>
+      <%= f.file_field :image %>
 
       <%= f.submit :create, class: 'm-3' %>
 

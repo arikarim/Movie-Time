@@ -4,11 +4,12 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    
+
   end
 
   def new
     @article = Article.new
+    @subjects = Category.all
     @category_options = Category.all.map { |cate| [cate.name, cate.id] }
   end
 
