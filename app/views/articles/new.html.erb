@@ -1,0 +1,33 @@
+<div class='container'>
+  <div class='col-6 mx-auto'>
+    <%= form_with model: @article do |f| %>
+      <%
+=begin%>
+ <%= f.fields_for :categories do |category| %>
+
+      <%= category.label :Category%>
+      <%= category.text_field :name, class: 'form-control' %>
+
+      <% end %> 
+<%
+=end%>
+      <%
+=begin%>
+ <%= collection_select(:article, :category_id, Category.all, :id) %> 
+<%
+=end%>
+  <%= f.select(:category_id,  options_for_select(@category_options)) %>
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+
+      <%= f.label :content %>
+      <%= f.text_area :text, class: 'form-control' %>
+
+      <%= f.label :image %>
+      <%= f.file_field :image, class: 'form-control' %>
+
+      <%= f.submit :create, class: 'm-3' %>
+
+    <% end %>
+  </div>
+</div>

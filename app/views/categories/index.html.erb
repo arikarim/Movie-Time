@@ -1,0 +1,10 @@
+<div class='container'>
+
+  <% @categories.each do |category| %>
+    <div class=' m-4' >
+      <%= category.name %>
+      <%= category.articles.last.image %>
+    </div>
+  <% end %>
+
+</div>
