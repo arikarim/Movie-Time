@@ -4,10 +4,10 @@
     <%= form_with model: @category do |f| %>
       <div class=' mx-3'>
         Create your category:))
-        <%= f.text_field :name,placeholder:'name', class:'form-control my-3' %><br/>
+        <%= f.text_field :name,placeholder:'name', class:'form-control my-3' %>
       </div>
-      <%= f.submit :create, class:'mx-3 text-center' %>
-
+      <%= f.submit :create, class:'mx-3 text-center' %> 
     <% end %>
+    <%= link_to 'Back', root_path, class:'btn btn-secondary w-25 mx-3 my-3' %>
   </div>
 </div>

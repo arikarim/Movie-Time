@@ -15,12 +15,12 @@ module ApplicationHelper
   end
 
   def article_session
-    if user_signed_in?
-      content_tag(:div) do
-        (link_to 'Home', root_path, class: 'text-decoration-none link-dark fs-4 mx-3') +
-          (link_to 'New Article', new_article_path, class: 'text-decoration-none link-dark fs-4 mx-3') +
-          (link_to 'New Category', new_category_path, class: 'text-decoration-none link-dark fs-4 mx-3')
-      end
+    return unless user_signed_in?
+
+    content_tag(:div) do
+      (link_to 'Home', root_path, class: 'text-decoration-none link-dark fs-4 mx-3') +
+        (link_to 'New Article', new_article_path, class: 'text-decoration-none link-dark fs-4 mx-3') +
+        (link_to 'New Category', new_category_path, class: 'text-decoration-none link-dark fs-4 mx-3')
     end
   end
 
@@ -38,13 +38,4 @@ module ApplicationHelper
       end
     end
   end
-
-  # def alerts
-  #   return unless notice
-
-  #   content_tag(:div, class: 'alert alert-warning alert-dismissible fade show', role: 'alert') do
-  #     notice +
-  #       button_tag(:button, type: 'button', class: 'btn-close', data_bs_dismiss: 'alert', aria_label: 'Close')
-  #   end
-  # end
 end
