@@ -8,7 +8,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    @category_articles = @category.articles.order("created_at DESC")
+    @category_articles = @category.articles.order('created_at DESC')
   end
 
   def new

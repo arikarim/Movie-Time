@@ -1,6 +1,13 @@
-<%= form_with model: @category do |f| %>
-  <%= f.label :type %><br/>
-  <%= f.text_field :name %><br/>
-  <%= f.submit :create %>
+<div class='container my-5'>
 
-<% end %>
+  <div class='row col-6 mx-auto my-5 p-5 bg-light'>
+    <%= form_with model: @category do |f| %>
+      <div class=' mx-3'>
+        Create your category:))
+        <%= f.text_field :name,placeholder:'name', class:'form-control my-3' %><br/>
+      </div>
+      <%= f.submit :create, class:'mx-3 text-center' %>
+
+    <% end %>
+  </div>
+</div>

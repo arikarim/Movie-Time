@@ -7,22 +7,8 @@
   </div>
 
   <div class='row'>
-    <% @categories.each do |category| %>
-        <div class='col-3 d-inline-block img1'>
-          <div class='position-relative imgg'>
-            <div class='position-absolute top-0 start-50'>
-              <%=link_to category.name, category_path(category), class:'text-decoration-none link-dark' %>
-            </div>
-            <% category.articles.each do |article| %>
-              <% if article == category.articles.last %>
-                  <div class='position-absolute bottom-0 start-50'>
-                    <%= article.title %>
-                  </div>
-                  <%= image_tag article.image_url, class:'imgg img-fluid' if article.image  %>
-                </div>
-              <% end %>
-            <%end%>
-        </div>
+    <% @categories.reverse_each do |category| %>
+      <%= all_categories(category) %>
     <% end %>
   </div>
 
