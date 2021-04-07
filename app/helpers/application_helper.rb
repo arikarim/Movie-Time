@@ -38,4 +38,13 @@ module ApplicationHelper
       end
     end
   end
+
+  # def alerts
+  #   return unless notice
+
+  #   content_tag(:div, class: 'alert alert-warning alert-dismissible fade show', role: 'alert') do
+  #     notice +
+  #       button_tag(:button, type: 'button', class: 'btn-close', data_bs_dismiss: 'alert', aria_label: 'Close')
+  #   end
+  # end
 end

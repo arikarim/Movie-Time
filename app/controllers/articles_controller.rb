@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  before_action :authenticate_user!
   include ArticlesHelper
   def index
     @articles = Article.all
@@ -17,7 +18,7 @@ class ArticlesController < ApplicationController
   def create
     @article = current_user.articles.build(article_params)
     if @article.save
-      redirect_to @article
+      redirect_to root_path
       flash[:notice] = 'Article created'
     else
       render :new

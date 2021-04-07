@@ -1,8 +1,8 @@
-
+<%= render 'layouts/alerts' %>
 <div class= 'container-fluid'>
 
   <div class='row'>
-    <% @category.articles.each do |article| %>
+    <% @category_articles.each do |article| %>
       
       <div class='d-flex col-6 article-height my-2'>
 
@@ -16,10 +16,10 @@
             <%= @category.name.upcase%>
           </div>
 
-          <div class='text-dark'>
+          <div class='text-dark fw-bolder'>
             <%= article.title.capitalize %>
           </div>
-          <%= article.text %>
+          <%= article.text[0..50] %>...
           <div class='position-absolute bottom-0 m-5'>
             Author:  <%= article.author.email%>
           </div>

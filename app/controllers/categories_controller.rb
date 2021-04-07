@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
   def index
     @categories = Category.all
     @articles = Article.all
@@ -7,6 +8,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
+    @category_articles = @category.articles.order("created_at DESC")
   end
 
   def new

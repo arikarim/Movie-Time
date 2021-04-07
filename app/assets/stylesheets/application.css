@@ -14,8 +14,10 @@
  *= require_self
  */
 
-html, body, main {
+html, body{
   padding: 0;
   margin: 0;
   position: relative;
+  height: 100vh;
+
 }
