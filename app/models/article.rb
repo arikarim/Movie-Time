@@ -6,5 +6,11 @@ class Article < ApplicationRecord
   has_many :votes
   belongs_to :category
 
-  scope :latest, -> {where(Article = Articles.last)}
+  scope :feature, lambda {
+    Article.joins(:votes).group(:id).count.max_by { |_k, v| v }
+  }
+
+  def finish
+    @article = Article.joins('LEFT OUTER JOIN Articles ON votes.article_id =articles_id').group('articles.id').count.max_by {|v| v}
+  end
 end

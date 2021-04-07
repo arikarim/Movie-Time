@@ -1,0 +1,41 @@
+
+<div class= 'container-fluid'>
+
+  <div class='row'>
+    <% @category.articles.each do |article| %>
+      
+      <div class='d-flex col-6 article-height my-2'>
+
+        <div class='col-6'>
+          <%= image_tag article.image_url, class:'article-photo img-fluid' if article.image %>
+        </div>
+
+        <div class='col-6 text-center position-relative'>
+
+          <div class='text-warning text-decoration-underline text-start m-3'>
+            <%= @category.name.upcase%>
+          </div>
+
+          <div class='text-dark'>
+            <%= article.title.capitalize %>
+          </div>
+          <%= article.text %>
+          <div class='position-absolute bottom-0 m-5'>
+            Author:  <%= article.author.email%>
+          </div>
+
+          <div class='position-absolute bottom-0 fs-6 d-flex'>
+            <%= vote(article)%>
+          </div>
+
+          <div class='position-absolute bottom-0 start-50 fs-6 '>
+            Votes: <%= article.votes.count%>
+          </div>
+
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <%= render 'layouts/footer' %>
+</div>

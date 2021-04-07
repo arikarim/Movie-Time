@@ -1,22 +1,29 @@
 <div class='container'>
-  <div class='col-6 mx-auto'>
+  <div class='col-8 mx-auto'>
     <%= form_with model: @article do |f| %>
-    
-      <%= collection_select(:article, :category_id,Category.all, :id, :name) %>  
 
-      <%= f.label :title %>
-      <%= f.text_field :title, class: 'form-control' %>
+      <%= f.label :category, class:'m-2' %>
+      <%= collection_select(:article, :category_id,Category.all, :id, :name)%>  
+      <div class=' my-3'>
+        <%= f.label :title, class:'m-2' %>
+        <%= f.text_field :title, class: 'form-control' %>
+      </div>
 
-      <%= f.label :content %>
-      <%= f.text_area :text, class: 'form-control' %>
-
-      <%= f.label :image %>
-      <%= image_tag f.object.image_url if f.object.cached_image_data %>
-      <%= f.hidden_field :image, value: f.object.cached_image_data %>
-      <%= f.file_field :image %>
-
-      <%= f.submit :create, class: 'm-3' %>
-
+      <div class=' my-3'>
+        <%= f.label :content, class:'m-2' %>
+        <%= f.text_area :text, class: 'form-control' %>
+      </div>
+      <div class=' my-3'>
+        <div class=''>
+          <%= f.label :image, class:'m-2' %>
+          <%= image_tag f.object.image_url if f.object.cached_image_data %>
+          <%= f.hidden_field :image, value: f.object.cached_image_data %>
+          <%= f.file_field :image %>
+        </div>
+      </div>
+      <div class=' my-3'>
+        <%= f.submit :create, class: 'm-3' %>
+      </div>
     <% end %>
   </div>
 </div>

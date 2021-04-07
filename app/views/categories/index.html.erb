@@ -1,13 +1,8 @@
-
+<%= render 'layouts/header' %>
 <div class='container'>
 
   <div class='row m-3'>
-    <div class='col-12 position-relative feature-article'>
-      <div class='position-absolute bottom-0 imgg start-50'>
-        <%= @categories.last.articles.last.title%>
-      </div>
-      <%= image_tag @categories.last.articles.last.image_url, class:'imgg mg-fluid'  %>
-    </div>
+   <%= render 'articles/feature' %>
   </div>
 
   <div class='row'>
@@ -15,7 +10,7 @@
         <div class='col-3 d-inline-block img1'>
           <div class='position-relative imgg'>
             <div class='position-absolute top-0 start-50'>
-              <%= category.name %>
+              <%=link_to category.name, category_path(category), class:'text-decoration-none link-dark' %>
             </div>
             <% category.articles.each do |article| %>
               <% if article == category.articles.last %>
