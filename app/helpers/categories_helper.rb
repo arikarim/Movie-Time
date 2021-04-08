@@ -13,16 +13,16 @@ module CategoriesHelper
   def category_title(category)
     return unless category.articles.last
 
-    content_tag(:div, class: 'position-absolute top-0 z-indexx start-0 mx-3') do
+    content_tag(:div, class: 'position-absolute top-0 z-indexx start-0') do
       (link_to category.name, category_path(category),
-               class: 'fw-bolder text-uppercase text-decoration-none category-border link-light')
+               class: 'fw-bolder text-uppercase text-decoration-none category-border link-light m-4 ')
     end
   end
 
   def all_categories(category)
     return unless category.articles.last
 
-    content_tag(:div, class: 'col-3 d-inline-block img1') do
+    content_tag(:div, class: 'col-3 p-0 d-inline-block img1') do
       content_tag(:div, class: 'position-relative imgg') do
         category_title(category) +
           latest(category)

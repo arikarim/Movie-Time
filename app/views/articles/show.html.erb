@@ -1,0 +1,32 @@
+<div class='container-fluid'>
+  <div class='row d-flex'>
+
+    <div class='col-6 bg-light article-text text-center position-relative'>
+
+      <div class='main-color text-decoration-underline m-3'>
+        <%= @article.category.name.upcase%>
+      </div>
+
+      <div class='text-dark fw-bolder'>
+        <%= @article.title.capitalize %>
+      </div>
+
+      <%= @article.text%>...
+      <div class='position-absolute bottom-0 d-flex my-5'>
+        <div class='mx-4'>
+          Author:  <%= @article.author.name.capitalize%>
+        </div>
+      </div>
+          <div class='position-absolute bottom-0 start-50 fs-6 '>
+            Votes: <%= @article.votes.count%>
+          </div>
+          <div class='position-absolute bottom-0 fs-6 d-flex'>
+            <%= vote(@article)%>
+          </div>
+    </div>
+        <div class='col-6'>
+          <%= image_tag @article.image_url, class:'article-photo img-fluid' if @article.image %>
+        </div>
+
+  </div>
+</div>

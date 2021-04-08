@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   before_action :authenticate_user!, except: [:index]
   def index
     @categories = Category.all.limit(4)
-    @nav_categories = Category.all
+    @nav_categories = Category.all.limit(7)
     @articles = Article.all
   end
 
