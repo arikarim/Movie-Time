@@ -22,8 +22,32 @@ This project can be found in (https://github.com/arikarim/rails-capstone/tree/ma
 
 ### ✨ [live version]()
 
-###   ![]()
-###   ![]()
+## Home Page
+
+###   ![screenshot](img/homepage.png)
+
+
+## Show page
+
+###   ![screenshot](img/showpage.png)
+
+
+## Register page
+
+###   ![screenshot](img/register.png)
+
+
+## Log in page
+
+###   ![screenshot](img/signinn.png)
+
+## New Movie page
+
+###   ![screenshot](img/newarticle.png)
+
+## New Category page
+
+###   ![screenshot](img/newcategory.png)
 
 
 ## 🔨 instructions
