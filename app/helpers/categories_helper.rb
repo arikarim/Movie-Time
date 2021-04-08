@@ -2,10 +2,10 @@ module CategoriesHelper
   def latest(category)
     return unless category.articles.last
 
-    content_tag(:div, class: 'position-absolute bottom-0 start-50 text-capitalize text-light fw-bolder') do
+    content_tag(:div, class: 'position-absolute bottom-0 z-indexx  start-50 text-capitalize text-light fw-bolder') do
       category.articles.last.title
     end +
-      content_tag(:div, class: 'imgg img-fluid') do
+      content_tag(:div, class: 'imgg img-fluid img-gradientt') do
         image_tag category.articles.last.image_url, class: 'imgg img-fluid' if category.articles.last.image
       end
   end
@@ -13,9 +13,9 @@ module CategoriesHelper
   def category_title(category)
     return unless category.articles.last
 
-    content_tag(:div, class: 'position-absolute top-0 start-0 mx-3') do
+    content_tag(:div, class: 'position-absolute top-0 z-indexx start-0 mx-3') do
       (link_to category.name, category_path(category),
-               class: 'fw-bolder text-uppercase text-decoration-underline link-light')
+               class: 'fw-bolder text-uppercase text-decoration-none category-border link-light')
     end
   end
 

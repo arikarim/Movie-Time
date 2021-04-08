@@ -1,14 +1,18 @@
 <nav class="navbar m-0  navbar-expand-lg navbar-light bg-light">
-  <div class="container">
+  <div class="container-fluid">
     <div class='col-3'>
-      <%= link_to 'liFEsTYle', root_path, class:'fs-2 link-dark text-decoration-none' %>
+      <%= link_to 'MoVieTiMe', root_path, class:'fs-2 link-dark text-decoration-none' %>
     </div>
 
-    <div class= 'col-5 mx-auto'>
-      <%= article_session %>
+    <div class='col-6 mx-auto'>
+        <ul class='list-unstyled d-flex'>
+          <%nav_category_all(@nav_categories).each do |cate| %>
+            <%= link_to cate.name, category_path(cate), class:'text-decoration-none link-dark fs-6 mx-3 mt-1'%>
+          <% end %>
+        </ul>
     </div>
     <div class="col-3 ">
-      <ul class="navbar-nav ">
+      <ul class="navbar-nav text-end">
         <%= user_sessions %>
       </ul>
     </div>

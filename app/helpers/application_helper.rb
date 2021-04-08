@@ -1,15 +1,23 @@
 module ApplicationHelper
+  def nav_category_all(categories)
+    return unless categories
+    
+    categories
+  end
+
   def user_sessions
     if user_signed_in?
-      content_tag(:div) do
-        (link_to 'sign out', destroy_user_session_path, method: :delete, class: 'link-dark text-decoration-none mx-3')
+      content_tag(:div, class: 'text-end') do
+        (link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'link-dark text-decoration-none mx-3') +
+          (link_to 'New Category', new_category_path, class: 'text-decoration-none link-dark fs-6 mx-1') +
+          (link_to 'New Movie', new_article_path, class: 'text-decoration-none link-dark fs-6 mx-3')
       end
     else
       content_tag(:div) do
-        (link_to 'sign in', new_user_session_path, class: 'link-dark text-decoration-none mx-3')
+        (link_to 'Sign in', new_user_session_path, class: 'link-dark text-decoration-none mx-3')
       end +
         content_tag(:div) do
-          (link_to 'sign up', new_user_registration_path, class: 'link-dark text-decoration-none mx-3')
+          (link_to 'Sign up', new_user_registration_path, class: 'link-dark text-decoration-none mx-3')
         end
     end
   end
@@ -17,10 +25,8 @@ module ApplicationHelper
   def article_session
     return unless user_signed_in?
 
-    content_tag(:div) do
-      (link_to 'Home', root_path, class: 'text-decoration-none link-dark fs-4 mx-3') +
-        (link_to 'New Article', new_article_path, class: 'text-decoration-none link-dark fs-4 mx-3') +
-        (link_to 'New Category', new_category_path, class: 'text-decoration-none link-dark fs-4 mx-3')
+    content_tag(:div, class: 'd-flex') do
+      (link_to 'Home', root_path, class: 'text-decoration-none link-dark fs-6 mx-3')
     end
   end
 
