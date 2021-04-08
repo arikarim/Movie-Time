@@ -1,16 +1,16 @@
 <%= render 'layouts/alerts' %>
-<div class= 'container-fluid mb-5'>
+<div class= 'container-fluid mb-3'>
 
-  <div class='row'>
+  <div class='row p-0'>
     <% @category_articles.each do |article| %>
       
-      <div class='d-flex col-6 article-height my-2'>
+      <div class='d-flex col-6 p-0 article-height article-content'>
 
         <div class='col-6'>
           <%= image_tag article.image_url, class:'article-photo img-fluid' if article.image %>
         </div>
 
-        <div class='col-6 text-center position-relative'>
+        <div class='col-6 article-text text-center position-relative'>
 
           <div class='text-warning text-decoration-underline text-start m-3'>
             <%= @category.name.upcase%>
@@ -36,6 +36,12 @@
       </div>
     <% end %>
   </div>
-
+  <div class='position-fixed bottom-0 mb-5'>
+    <div class='mb-3'>
+      <div class="digg_pagination">
+        <%= will_paginate @category_articles %>
+      </div>
+    </div>
+  </div>
   <%= render 'layouts/footer' %>
 </div>

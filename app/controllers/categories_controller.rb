@@ -7,8 +7,8 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    @category_articles = Article.where('category_id = ?', params[:id]).paginate(page: params[:page], per_page: 4).order(created_at: :desc)
     @category = Category.find(params[:id])
-    @category_articles = @category.articles.order('created_at DESC')
   end
 
   def new
