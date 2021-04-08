@@ -1,4 +1,12 @@
 module ApplicationHelper
+  def alert_notice
+    return unless notice
+
+    content_tag(:div, class: 'alert alert-secondary', role: 'alert') do
+      notice
+    end
+  end
+
   def nav_category_all(categories)
     return unless categories
 
@@ -15,7 +23,7 @@ module ApplicationHelper
     else
       content_tag(:div, class: 'd-flex justify-content-end') do
         (link_to 'Sign in', new_user_session_path, class: 'link-dark text-decoration-none mx-2') +
-          (link_to '|', class:'link-dark text-decoration-none') +
+          (link_to '|', class: 'link-dark text-decoration-none') +
           (link_to 'Register', new_user_registration_path, class: 'link-dark text-decoration-none mx-2')
       end
     end

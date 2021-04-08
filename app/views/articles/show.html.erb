@@ -1,7 +1,7 @@
 <div class='container-fluid'>
   <div class='row d-flex'>
 
-    <div class='col-6 bg-light article-text text-center position-relative'>
+    <div class='col-6 bg-light article-text1 text-center position-relative'>
 
       <div class='main-color text-decoration-underline m-3'>
         <%= @article.category.name.upcase%>
@@ -25,8 +25,12 @@
           </div>
     </div>
         <div class='col-6'>
-          <%= image_tag @article.image_url, class:'article-photo img-fluid' if @article.image %>
+          <%= image_tag @article.image_url, class:'article-photo1 img-fluid' if @article.image %>
         </div>
 
   </div>
+  <div class='text-center'>
+    <%= link_to 'Back', category_path(@article.category), class:'text-decoration-none main-color' %>
+  </div>
+  <%= render 'layouts/footer' %>
 </div>

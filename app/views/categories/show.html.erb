@@ -12,14 +12,14 @@
 
         <div class='col-6 bg-light article-text text-center position-relative'>
 
-          <div class='main-color text-decoration-underline text-start m-3'>
+          <div class='main-color text-decoration-underline text-start m-3 fw-bolder'>
             <%= @category.name.upcase%>
           </div>
 
           <div class='text-dark fw-bolder'>
             <%= article.title.capitalize %>
           </div>
-          <%= article.text[0..50] %>...
+          <%= article.text[0..50].capitalize %>...
           <div class='position-absolute bottom-0 d-flex my-5'>
             <div class='mx-4'>
             Author:  <%= article.author.name.capitalize%>

@@ -1,31 +1,31 @@
 <%= render 'layouts/header' %>
 
-<div class= 'container'>
-  <div class= 'col-6 mx-auto'>
+<div class= 'container-fluid login-photo'>
+  <div class= 'col-6 mx-auto pt-5'>
 
-    <h2 class='mx-3 fw-bolder'>Log in</h2>
+    <h2 class='mx-3 fw-bolder text-light'>Log in</h2>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       
-      <div class="field mx-3">
+      <div class="field mx-3 text-light">
         <%= f.label :email %><br />
-        <%= f.email_field :email,class:'form-control', autofocus: true, autocomplete: "email" %>
+        <%= f.email_field :email,class:'form-control opacity1', autofocus: true, autocomplete: "email" %>
       </div>
       <br/>
       <div class="field mx-3">
         <%= f.label :password %><br />
-        <%= f.password_field :password,class:'form-control', autocomplete: "current-password" %>
+        <%= f.password_field :password,class:'form-control opacity1', autocomplete: "current-password" %>
       </div>
 
       <% if devise_mapping.rememberable? %>
-        <div class="field mx-3">
-          <%= f.check_box :remember_me %>
+        <div class="field mx-3 text-light">
+          <%= f.check_box :remember_me, class:'opacity1' %>
           <%= f.label :remember_me %>
         </div>
       <% end %>
       <br/>
-      <div class="actions mx-3">
-        <%= f.submit "Log in" %>
+      <div class="actions mx-3 ">
+        <%= f.submit "Log in", class:'opacity1 px-2 w-25' %>
       </div>
     <% end %>
 

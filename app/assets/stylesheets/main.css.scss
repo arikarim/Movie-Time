@@ -29,6 +29,28 @@
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+.login-photo {
+  margin: auto;
+  width: 100%;
+  height: 123vh;
+  position: relative;
+  background: asset_url('signin.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register {
+  margin: auto;
+  width: 100%;
+  height: 123vh;
+  position: relative;
+  background: asset_url('register.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 .opacity1 {
   opacity: 0.6;
   border-radius: 25px;
