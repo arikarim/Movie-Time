@@ -85,8 +85,6 @@ when you did that run:
 when the tests passed you can ru the server with:
 
 ```
-
-```
 $ rails server
 ```
 
