@@ -27,11 +27,6 @@ body{
   color: orangered;
 }
 
-.new-article {
-  width: 100%;
-  background-image: asset-url('/img/back.jpg');
-}
-
 .category-border {
   border-bottom: 3px solid yellow;
 }
