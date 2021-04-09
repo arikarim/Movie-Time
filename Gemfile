@@ -13,6 +13,10 @@ gem 'shrine', '~> 3.3'
 
 gem 'shrine-cloudinary', '~> 1.1'
 
+gem 'cloudinary'
+
+gem "figaro"
+
 gem 'htmlbeautifier'
 
 gem 'will_paginate', '~> 3.3.0'
