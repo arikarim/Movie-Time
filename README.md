@@ -19,7 +19,6 @@ This project can be found in (https://github.com/arikarim/rails-capstone/tree/ma
 
 
 
-
 ### ✨ [live version]()
 
 ## Home Page
