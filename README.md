@@ -20,7 +20,7 @@ This project can be found in (https://github.com/arikarim/rails-capstone/tree/ma
 
 
 
-### ✨ [live version]()
+### ✨ [live version](https://enigmatic-dusk-36516.herokuapp.com/)
 
 ## Home Page
 
@@ -73,12 +73,6 @@ $ rails db:seed
 
 
 ## Rspec and Capibara
-
-### Important note!
-
-In order to run the tests inside the App/assets/stylesheets please comment out(main.css.scss) because the images are  conflicting with with the Capibara.
-
-when you did that run:
 
 - bundle exec rspec
 
