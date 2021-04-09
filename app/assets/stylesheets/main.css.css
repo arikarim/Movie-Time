@@ -1,52 +1,53 @@
 .new-article {
-  margin: auto;
-  width: 100%;
-  height: 123vh;
-  position: relative;
-  background: asset_url("back.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("back.jpg");
+  background-margin: auto;
+  background-width: 100%;
+  background-height: 1233vh;
+  background-position: relative;
+  background-background-size: cover;
+  background-background-attachment: fixed;
+  background-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .new-category {
-  margin: auto;
-  width: 100%;
-  height: 123vh;
-  position: relative;
-  background: asset_url("cback.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("cback.jpg");
+  background-margin: auto;
+  background-width: 100%;
+  background-height: 1233vh;
+  background-position: relative;
+  background-background-size: cover;
+  background-background-attachment: fixed;
+  background-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.height1 {
+  min-height: 100vh;
 }
 
 .login-photo {
-  margin: auto;
-  width: 100%;
-  height: 123vh;
-  position: relative;
-  background: asset_url("signin.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("signin.jpg");
+  background-margin: auto;
+  background-width: 100%;
+  background-height: 1233vh;
+  background-position: relative;
+  background-background-size: cover;
+  background-background-attachment: fixed;
+  background-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .register {
-  margin: auto;
-  width: 100%;
-  height: 123vh;
-  position: relative;
-  background: asset_url("register.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("register.jpg");
+  background-margin: auto;
+  background-width: 100%;
+  background-height: 1233vh;
+  background-position: relative;
+  background-background-size: cover;
+  background-background-attachment: fixed;
+  background-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .opacity1 {
   opacity: 0.6;
   border-radius: 25px;
 }
+/*# sourceMappingURL=main.css.css.map */
