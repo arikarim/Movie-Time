@@ -1,4 +1,12 @@
-# Movie Time
+<br />
+<p align="center">
+    <img src="app/assets/images/microverse.png" alt="Logo" width="80" height="80">
+  <h3 align="center">RoR / Capstone --> [Movietime]</h3>
+
+  <p align="center">
+    This project is the Capstone of the Microverse curriculum at the end of the Ruby on Rails module!
+  </p>
+</p>
 
 Movie time project, Users can create categories and movies of their choice, where they create movies and give title, description and a photo about it and other users can vote for the movies they like.
 
