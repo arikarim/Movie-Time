@@ -15,7 +15,7 @@ gem 'shrine-cloudinary', '~> 1.1'
 
 gem 'cloudinary'
 
-gem "figaro"
+gem 'figaro'
 
 gem 'htmlbeautifier'
 
