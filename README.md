@@ -19,11 +19,13 @@ This project can be found in (https://github.com/arikarim/rails-capstone/tree/ma
 
 
 
+
 ### ✨ [live version]()
 
 ## Home Page
 
 ###   ![screenshot](img/homepage.png)
+
 
 
 ## Show page
@@ -69,6 +71,7 @@ Next, seed the database:
 $ rails db:seed
 ```
 
+
 ## Rspec and Capibara
 
 ### Important note!
@@ -80,6 +83,8 @@ when you did that run:
 - bundle exec rspec
 
 when the tests passed you can ru the server with:
+
+```
 
 ```
 $ rails server
