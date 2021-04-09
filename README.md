@@ -89,6 +89,7 @@ $ rails server
 ```
 
 
+
 ## 🤝 contributing
 
 contributions, issues, and feature requests are welcome!<br/>feel free to check [issues page](https://github.com/arikarim/rails-capstone/issues).
