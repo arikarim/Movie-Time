@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :articles do
+  resources :articles, only: [:new, :create, :show] do
     resources :votes, only: %i[create destroy]
   end
   devise_for :users

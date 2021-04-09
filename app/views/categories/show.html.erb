@@ -1,7 +1,7 @@
 <%= render 'layouts/alerts' %>
 <div class= 'container-fluid mb-3'>
 
-  <div class='row p-0'>
+  <div class='row p-0 mb-5'>
     <% @category_articles.each do |article| %>
       
       <div class='d-flex col-6 p-0 article-height article-content'>
@@ -10,18 +10,23 @@
           <%= image_tag article.image_url, class:'article-photo img-fluid' if article.image %>
         </div>
 
-        <div class='col-6 article-text text-center position-relative'>
+        <div class='col-6 bg-light article-text text-center position-relative'>
 
-          <div class='text-warning text-decoration-underline text-start m-3'>
+          <div class='main-color text-decoration-underline text-start m-3 fw-bolder'>
             <%= @category.name.upcase%>
           </div>
 
           <div class='text-dark fw-bolder'>
             <%= article.title.capitalize %>
           </div>
-          <%= article.text[0..50] %>...
-          <div class='position-absolute bottom-0 m-5'>
-            Author:  <%= article.author.email%>
+          <%= article.text[0..50].capitalize %>...
+          <div class='position-absolute bottom-0 d-flex my-5'>
+            <div class='mx-4'>
+            Author:  <%= article.author.name.capitalize%>
+            </div>
+            <div class='mx-4'>
+              <%= link_to 'Read More', article_path, class:'text-decoration-none main-color' %>
+            </div>
           </div>
 
           <div class='position-absolute bottom-0 fs-6 d-flex'>
