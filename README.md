@@ -70,13 +70,17 @@ Next, seed the database:
 $ rails db:seed
 ```
 
-Finally, run the test suite to verify that everything is working correctly:
+## Rspec and Capibara
 
-```
-$ rails rake or rspec
-```
+### Important note!
 
-If the test suite passes, you'll be ready to run the app in a local server:
+In order to run the tests inside the App/assets/stylesheets please comment out(main.css.scss) because the images are  conflicting with with the Capibara.
+
+when you did that run:
+
+- bundle exec rspec
+
+when the tests passed you can ru the server with:
 
 ```
 $ rails server
