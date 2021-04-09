@@ -8,7 +8,9 @@
         <ul class='list-unstyled d-flex'>
         <% if !nav_category_all(@nav_categories).nil?%>
           <%nav_category_all(@nav_categories).each do |cate| %>
-            <%= link_to cate.name, category_path(cate), class:'text-decoration-none link-dark fs-6 mx-3 mt-1'%>
+
+            <%= link_to cate.name.capitalize, category_path(cate), class:'text-decoration-none link-dark fs-6 mx-3 mt-1'%>
+
           <% end %>
           <% end %>
         </ul>

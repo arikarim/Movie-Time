@@ -27,6 +27,7 @@ This project can be found in (https://github.com/arikarim/rails-capstone/tree/ma
 ###   ![screenshot](img/homepage.png)
 
 
+
 ## Show page
 
 ###   ![screenshot](img/showpage.png)
@@ -70,13 +71,20 @@ Next, seed the database:
 $ rails db:seed
 ```
 
-Finally, run the test suite to verify that everything is working correctly:
+
+## Rspec and Capibara
+
+### Important note!
+
+In order to run the tests inside the App/assets/stylesheets please comment out(main.css.scss) because the images are  conflicting with with the Capibara.
+
+when you did that run:
+
+- bundle exec rspec
+
+when the tests passed you can ru the server with:
 
 ```
-$ rails rake or rspec
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
 
 ```
 $ rails server
