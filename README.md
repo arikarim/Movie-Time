@@ -80,6 +80,40 @@ $ rails db:seed
 ```
 
 
+## Upload Images and create Articles
+
+in order to be able to create movies(articles) in local machine you should do the following:
+
+- create an account on cloudinary
+
+- on your cloudinary dashboard you can see your(CLOUD_NAME, CLOUD_API AND CLOUD SECRET).
+
+- inside the config file create cloudinary.yml file and paste thid code below:
+
+---
+development:
+  cloud_name: ddmovditn
+  api_key: '143535593614143'
+  api_secret: Q9de7cQcJbpoT07tQlz0xPuJsFc
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: ddmovditn
+  api_key: '143535593614143'
+  api_secret: Q9de7cQcJbpoT07tQlz0xPuJsFc
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: ddmovditn
+  api_key: '143535593614143'
+  api_secret: Q9de7cQcJbpoT07tQlz0xPuJsFc
+  enhance_image_tag: true
+  static_file_support: false
+
+- change cloud_name, api_key and api_secret to yours using the cloudinary dashboard.
+
+
+
 ## Rspec and Capibara
 
 - bundle exec rspec

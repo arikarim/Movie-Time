@@ -25,11 +25,11 @@
           </div>
     </div>
         <div class='col-6'>
-          <%= image_tag @article.image_url, class:'article-photo1 img-fluid' if @article.image %>
+          <%= image_tag @article.image_url, class:'article-photo1 img-fluid' %>
         </div>
 
   </div>
-  <div class='text-center'>
+  <div class='m-3'>
     <%= link_to 'Back', category_path(@article.category), class:'text-decoration-none main-color' %>
   </div>
   <%= render 'layouts/footer' %>
