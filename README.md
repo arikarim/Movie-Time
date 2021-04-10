@@ -91,24 +91,24 @@ in order to be able to create movies(articles) in local machine you should do th
 - inside the config file create cloudinary.yml file and paste thid code below:
 
 ---
-development:
-  cloud_name: put yours
-  api_key: 'put yours'
-  api_secret: put yours
-  enhance_image_tag: true
-  static_file_support: false
-production:
-  cloud_name: put yours
-  api_key: 'put yours'
-  api_secret: put yours
-  enhance_image_tag: true
-  static_file_support: true
-test:
-  cloud_name: put yours
-  api_key: 'put yours'
-  api_secret: put yours
-  enhance_image_tag: true
-  static_file_support: false
+development: <br/>
+  cloud_name: put yours<br/>
+  api_key: 'put yours'<br/>
+  api_secret: put yours<br/>
+  enhance_image_tag: true<br/>
+  static_file_support: false<br/>
+production:<br/>
+  cloud_name: put yours<br/>
+  api_key: 'put yours'<br/>
+  api_secret: put yours<br/>
+  enhance_image_tag: true<br/>
+  static_file_support: true<br/>
+test:<br/>
+  cloud_name: put yours<br/>
+  api_key: 'put yours'<br/>
+  api_secret: put yours<br/>
+  enhance_image_tag: true<br/>
+  static_file_support: false<br/>
 
 - change cloud_name, api_key and api_secret to yours using the cloudinary dashboard.
 
