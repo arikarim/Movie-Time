@@ -22,7 +22,7 @@ module CategoriesHelper
   def all_categories(category)
     return unless category.articles.last
 
-    content_tag(:div, class: 'col-3 p-0 d-inline-block img1') do
+    content_tag(:div, class: 'col-6 col-md-3 p-0 d-inline-block img1') do
       content_tag(:div, class: 'position-relative imgg') do
         category_title(category) +
           latest(category)

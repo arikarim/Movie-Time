@@ -4,12 +4,12 @@
       <%= link_to 'MoVieTiMe', root_path, class:'main-color fw-bolder fs-2 link-dark text-decoration-none' %>
     </div>
 
-    <div class='col-6 mx-auto'>
+    <div class='col-5 d-none d-lg-flex mx-auto'>
         <ul class='list-unstyled d-flex'>
           <%= nav_cates(@nav_categories) %>
         </ul>
     </div>
-    <div class="col-3 d-flex justify-content-end">
+    <div class="col-8 col-lg-4 d-flex justify-content-end">
       <ul class="navbar-nav text-end">
         <%= user_sessions %>
       </ul>
