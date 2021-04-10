@@ -7,6 +7,14 @@ module ApplicationHelper
     end
   end
 
+  def nav_category_alll(categories)
+    return unless categories
+
+    result = []
+    categories.map { |cate| result.push(cate) }
+    result
+  end
+
   def nav_category_all(categories)
     return unless categories
 
