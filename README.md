@@ -92,21 +92,21 @@ in order to be able to create movies(articles) in local machine you should do th
 
 ---
 development:
-  cloud_name: ddmovditn
-  api_key: '143535593614143'
-  api_secret: Q9de7cQcJbpoT07tQlz0xPuJsFc
+  cloud_name: put yours
+  api_key: 'put yours'
+  api_secret: put yours
   enhance_image_tag: true
   static_file_support: false
 production:
-  cloud_name: ddmovditn
-  api_key: '143535593614143'
-  api_secret: Q9de7cQcJbpoT07tQlz0xPuJsFc
+  cloud_name: put yours
+  api_key: 'put yours'
+  api_secret: put yours
   enhance_image_tag: true
   static_file_support: true
 test:
-  cloud_name: ddmovditn
-  api_key: '143535593614143'
-  api_secret: Q9de7cQcJbpoT07tQlz0xPuJsFc
+  cloud_name: put yours
+  api_key: 'put yours'
+  api_secret: put yours
   enhance_image_tag: true
   static_file_support: false
 
