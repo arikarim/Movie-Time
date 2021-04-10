@@ -1,0 +1,18 @@
+<nav class="navbar m-0  navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class='col-3'>
+      <%= link_to 'MoVieTiMe', root_path, class:'main-color fw-bolder fs-2 link-dark text-decoration-none' %>
+    </div>
+
+    <div class='col-6 mx-auto'>
+        <ul class='list-unstyled d-flex'>
+          <%= nav_cates(@nav_categories) %>
+        </ul>
+    </div>
+    <div class="col-3 d-flex justify-content-end">
+      <ul class="navbar-nav text-end">
+        <%= user_sessions %>
+      </ul>
+    </div>
+  </div>
+</nav>

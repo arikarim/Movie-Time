@@ -1,0 +1,60 @@
+<%= render 'layouts/alerts' %>
+<div class= 'container-fluid mb-3'>
+
+  <div class='row p-0 mb-5'>
+    <% @category_articles.each do |article| %>
+      
+      <div class='d-flex col-6 p-0 article-height article-content'>
+
+        <div class='col-6'>
+          <%= image_tag article.image_url, class:'article-photo img-fluid' if article.image %>
+        </div>
+
+        <div class='col-6 bg-light article-text text-center position-relative'>
+
+          <div class='main-color text-decoration-underline text-start m-3 fw-bolder'>
+            <%= @category.name.upcase%>
+          </div>
+
+          <div class='text-dark fw-bolder'>
+            <%= article.title.capitalize %>
+          </div>
+          <%= article.text[0..50].capitalize %>...
+          <div class='position-absolute bottom-0 d-flex my-5'>
+            <div class='mx-4'>
+            Author:  <%= article.author.name.capitalize%>
+            </div>
+            <div class='mx-4'>
+              <%= link_to 'Read More', article_path(article), class:'text-decoration-none main-color' %>
+            </div>
+          </div>
+
+          <div class='position-absolute bottom-0 fs-6 d-flex'>
+            <%= vote(article)%>
+          </div>
+
+          <div class='position-absolute bottom-0 start-50 fs-6 '>
+            Votes: <%= article.votes.count%>
+          </div>
+
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class='position-fixed bottom-0 mb-5'>
+    <div class='mb-5'>
+      <div class="digg_pagination">
+        <%= will_paginate @category_articles %>
+      </div>
+    </div>
+  </div>
+    <div class='position-fixed bottom-0 end-0 mb-5'>
+    <div class='m-5'>
+
+        <%= link_to 'Home', root_path, class:'text-decoration-none main-color' %>
+
+    </div>
+  </div>
+
+  <%= render 'layouts/footer' %>
+</div>

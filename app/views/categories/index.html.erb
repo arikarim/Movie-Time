@@ -1,0 +1,15 @@
+<%= render 'layouts/header' %>
+<%= render 'layouts/alerts' %>
+<div class='container-fluid'>
+
+  <div class='row '>
+   <%= render 'articles/feature' %>
+  </div>
+
+  <div class='row p-0'>
+    <% @categories.reverse_each do |category| %>
+      <%= all_categories(category) %>
+    <% end %>
+  </div>
+
+</div>

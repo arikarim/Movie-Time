@@ -1,0 +1,32 @@
+<div class='container-fluid height1 new-article'>
+  <div class='col-8 mx-auto  p-5 mx-3'>
+    <%= form_with model: @article do |f| %>
+
+      <%= f.label :category, class:'m-2 text-light ' %>
+      <div class='opacity1'>
+      <%= collection_select(:article, :category_id,Category.all, :id, :name)%>  
+      </div>
+      <div class=' my-3'>
+        <%= f.label :title, class:'m-2 text-light' %>
+        <%= f.text_field :title, class: 'form-control opacity1' %>
+      </div>
+
+      <div class=' my-3'>
+        <%= f.label :text, class:'m-2 text-light' %>
+        <%= f.text_area :text, class: 'form-control opacity1' %>
+      </div>
+      <div class=' my-3'>
+        <div class=''>
+          <%= f.label :image, class:'m-2 text-light' %>
+          <%= image_tag f.object.image_url %>
+          <%= f.hidden_field :image, value: f.object.cached_image_data %>
+          <%= f.file_field :image, class:'opacity1' %>
+        </div>
+      </div>
+      <div class=' my-3'>
+        <%= f.submit :create, class: 'my-2 opacity1' %>
+      </div>
+    <% end %>
+  <%= link_to 'Back', root_path, class:'btn btn-light opacity1' %>
+  </div>
+</div>
