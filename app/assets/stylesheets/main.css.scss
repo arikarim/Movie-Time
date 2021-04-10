@@ -1,0 +1,61 @@
+
+.new-article {
+  background: {
+    image: url("back.jpg");
+    margin: auto;
+    width: 100%;
+    height: 1233vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.new-category {
+  background: {
+    image: url("cback.jpg");
+    margin: auto;
+    width: 100%;
+    height: 1233vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.height1 {
+  min-height: 100vh;
+}
+
+.login-photo {
+  background: {
+    image: url("signin.jpg");
+    margin: auto;
+    width: 100%;
+    height: 1233vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.register {
+  background: {
+    image: url("register.jpg");
+    margin: auto;
+    width: 100%;
+    height: 1233vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.opacity1 {
+  opacity: 0.6;
+  border-radius: 25px;
+}

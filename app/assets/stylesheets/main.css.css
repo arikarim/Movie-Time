@@ -1,0 +1,52 @@
+.new-article {
+  background-image: url("back.jpg");
+  background-margin: auto;
+  background-width: 100%;
+  background-height: 1233vh;
+  background-position: relative;
+  background-background-size: cover;
+  background-background-attachment: fixed;
+  background-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.new-category {
+  background-image: url("cback.jpg");
+  background-margin: auto;
+  background-width: 100%;
+  background-height: 1233vh;
+  background-position: relative;
+  background-background-size: cover;
+  background-background-attachment: fixed;
+  background-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.height1 {
+  min-height: 100vh;
+}
+
+.login-photo {
+  background-image: url("signin.jpg");
+  background-margin: auto;
+  background-width: 100%;
+  background-height: 1233vh;
+  background-position: relative;
+  background-background-size: cover;
+  background-background-attachment: fixed;
+  background-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register {
+  background-image: url("register.jpg");
+  background-margin: auto;
+  background-width: 100%;
+  background-height: 1233vh;
+  background-position: relative;
+  background-background-size: cover;
+  background-background-attachment: fixed;
+  background-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.opacity1 {
+  opacity: 0.6;
+  border-radius: 25px;
+}

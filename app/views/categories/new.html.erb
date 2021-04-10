@@ -1,0 +1,15 @@
+<div class='container-fluid py-5 height1 new-category'>
+
+  <div class='row col-6 mx-auto py-5 '>
+    <%= form_with model: @category do |f| %>
+      <div class=' mx-3 text-light'>
+        Create your category:))
+        <%= f.text_field :name,placeholder:'name', class:'opacity1 form-control my-3' %>
+      </div>
+      <%= f.submit :create, class:'mx-3 my-2 text-center opacity1 w-25' %> 
+    <% end %>
+    <div class='h-'>
+    <%= link_to 'Back', root_path, class:'btn btn-light  opacity1 w-25 mx-3 my-3' %>
+    </div>
+  </div>
+</div>
