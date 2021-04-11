@@ -7,6 +7,8 @@ gem 'devise'
 
 gem 'rexml'
 
+gem 'rename'
+
 gem 'image_processing', '~> 1.2'
 
 gem 'shrine', '~> 3.3'
