@@ -33,7 +33,7 @@ This project can be found in (https://github.com/arikarim/rails-capstone/tree/ma
 
 
 
-### ✨ [live version](https://stark-reef-16525.herokuapp.com/)
+### ✨ [live version](https://moveitime.herokuapp.com/)
 
 ## Home Page
 
