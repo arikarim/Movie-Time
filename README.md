@@ -33,7 +33,7 @@ This project can be found in (https://github.com/arikarim/rails-capstone/tree/ma
 
 
 
-### ✨ [live version](https://enigmatic-dusk-36516.herokuapp.com/)
+### ✨ [live version](https://stark-reef-16525.herokuapp.com/)
 
 ## Home Page
 
