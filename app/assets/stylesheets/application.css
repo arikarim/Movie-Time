@@ -19,7 +19,7 @@ body {
   margin: 0;
   position: relative;
   height: 100vh;
-  min-height: 100vh;
+  min-height: 100%;
   overflow-x: hidden;
 }
 
