@@ -25,7 +25,7 @@
           </div>
     </div>
         <div class='col-6'>
-          <%= image_tag @article.image_url, class:'article-photo1 img-fluid' %>
+          <%= image_tag @article.image_url, class:'article-photo1 img-fluid' if @article.image %>
         </div>
 
   </div>
