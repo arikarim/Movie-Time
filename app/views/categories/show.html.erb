@@ -19,7 +19,9 @@
           <div class='text-dark fw-bolder'>
             <%= article.title.capitalize %>
           </div>
-          <%= article.text[0..50].capitalize %>...
+          <div class='d-flex flex-wrap'>
+            <%= article.text[0..25].capitalize %>...
+          </div>
           <div class='position-absolute bottom-0 d-flex my-5'>
             <div class='mx-4'>
             Author:  <%= article.author.name.capitalize%>

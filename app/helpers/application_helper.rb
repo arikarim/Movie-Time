@@ -102,19 +102,4 @@ module ApplicationHelper
       (link_to 'Home', root_path, class: 'text-decoration-none link-dark fs-6 mx-3')
     end
   end
-
-  def vote(article)
-    vote = Vote.find_by(article: article, user: current_user)
-    if vote
-      content_tag(:div) do
-        (link_to 'Un vote', article_vote_path(article), method: :delete,
-                                                        class: 'text-decoration-none link-dark fs-6 mx-2')
-      end
-    else
-      content_tag(:div) do
-        (link_to 'Vote', article_votes_path(article_id: article.id), method: :post,
-                                                                     class: 'text-decoration-none link-dark fs-6 mx-2')
-      end
-    end
-  end
 end
