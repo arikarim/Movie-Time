@@ -24,7 +24,7 @@ body {
 }
 
 .main-color {
-  color: orangered;
+  color: #ff4500;
 }
 
 .category-border {
@@ -76,15 +76,15 @@ body {
 .digg_pagination .current {
   font-style: normal;
   font-weight: bold;
-  background: goldenrod;
+  background: #ff4500;
   color: white;
-  border: 1px solid goldenrod;
+  border: 1px solid #ff4500;
 }
 
 .digg_pagination a {
   text-decoration: none;
   color: black;
-  border: 1px solid goldenrod;
+  border: 1px solid #ff4500;
 }
 
 .digg_pagination a:hover,
