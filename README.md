@@ -31,8 +31,6 @@ Movie time project, Users can create categories and movies of their choice, wher
 This project can be found in (https://github.com/arikarim/rails-capstone/tree/main)
 
 
-
-
 ### ✨ [live version](https://moveitime.herokuapp.com/)
 
 ## Home Page
