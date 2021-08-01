@@ -2,7 +2,6 @@
 
 
 
-
 <br />
 <p align="center">
     <img src="app/assets/images/microverse.png" alt="Logo" width="80" height="80">
