@@ -1,8 +1,5 @@
 
 
-
-
-
 <br />
 <p align="center">
     <img src="app/assets/images/microverse.png" alt="Logo" width="80" height="80">
@@ -26,14 +23,14 @@ Movie time project, Users can create categories and movies of their choice, wher
 - postgresql
 - Git
 
+
+
 ## 🚀 the project
 
 This project can be found in (https://github.com/arikarim/rails-capstone/tree/main)
 
 
-
-
-### ✨ [live version](https://enigmatic-dusk-36516.herokuapp.com/)
+### ✨ [live version](https://moveitime.herokuapp.com/)
 
 ## Home Page
 
